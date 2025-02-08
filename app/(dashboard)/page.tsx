@@ -1,5 +1,6 @@
 import { Button } from '@/app/components/ui/button';
+import { UserButton } from '@clerk/nextjs';
 
 export default function Home() {
-	return <p>This is an authentic route</p>;
+	return <UserButton afterSwitchSessionUrl="/"></UserButton>;
 }
